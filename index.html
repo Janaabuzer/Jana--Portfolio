@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jana-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐘</text></svg>">;
+</head>
+<body>
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Holographic Cursor -->
+    <div class="liquid-cursor"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-animated">Jana Abuzer</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-text="Home">Home</a></li>
+                <li><a href="#about" data-text="About">About</a></li>
+                <li><a href="#skills" data-text="Skills">Skills</a></li>
+                <li><a href="#projects" data-text="Projects">Projects</a></li>
+                <li><a href="#contact" data-text="Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-split">
+            <div class="hero-left">
+                <p class="hero-subtitle">Creative Designer & Developer</p>
+                <h1 class="glitch-title" data-text="Making Magic Happen">Making Magic Happen</h1>
+                <p class="hero-description">
+                    My name is Jana abuzer,i am a software engineer and i I craft unforgettable digital experiences that blend cutting-edge design with powerful storytelling. 
+                    Every pixel, every interaction, every moment is intentionally designed to inspire.
+                </p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-primary"><span>Explore My Work</span></a>
+                    <a href="#contact" class="btn-secondary"><span>Let's Talk</span></a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="morphing-blob"></div>
+                <div class="rotating-3d-object">
+                    <div class="face face-front">📱</div>
+                    <div class="face face-back">🎇</div>
+                    <div class="face face-right">💻</div>
+                    <div class="face face-left">🤖</div>
+                    <div class="face face-top">🖱️</div>
+                    <div class="face face-bottom">🫧</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Timeline Section -->
+    
+<section id="about" class="about-section">
+    <div class="section-header">
+        <h2 class="section-title">My Engineering Journey</h2>
+    </div>
+    <div class="timeline">
+        <!-- 3rd Year - Current -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">2024 - Present</div>
+                <h3 class="timeline-title">Third Year Software Engineering</h3>
+                <p class="timeline-description">Mastering web development technologies, advanced OOP concepts, and database design. Building dynamic web applications and learning to architect scalable systems while applying theoretical knowledge to practical projects.</p>
+            </div>
+        </div>
+        
+        <!-- 2nd Year -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">2023 - 2024</div>
+                <h3 class="timeline-title">Second Year Engineering</h3>
+                <p class="timeline-description">Dived deep into core computer science concepts including data structures, operating systems, and computer networks. Developed efficient algorithms and gained understanding of system-level programming and network protocols.</p>
+            </div>
+        </div>
+        
+        <!-- 1st Year -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">2022 - 2023</div>
+                <h3 class="timeline-title">First Year Foundations</h3>
+                <p class="timeline-description">Built strong programming fundamentals through problem-solving techniques and object-oriented programming. Learned to think like an engineer and developed logical reasoning skills essential for software development.</p>
+            </div>
+        </div>
+        
+        <!-- Pre-University -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-year">2020 - 2022</div>
+                <h3 class="timeline-title">Tech Discovery Phase</h3>
+                <p class="timeline-description">Discovered my passion for technology through self-learning and exploration. Built basic websites, experimented with coding tutorials, and developed the curiosity that led me to pursue software engineering.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Skills Map Section with Connected Nodes -->
+    <!-- Skills Map Section with Connected Nodes -->
+<section id="skills" class="skills-section">
+    <div class="section-header">
+        <h2 class="section-title">Skill Constellation</h2>
+        <p style="color: rgba(255, 255, 255, 0.6); font-size: 18px; margin-top: 20px;">A universe of diverse abilities ✨</p>
+    </div>
+    <div class="skills-map-container">
+        <!-- Canvas for drawing connecting lines -->
+        <canvas id="skills-canvas"></canvas>
+        
+        <!-- Skill Nodes -->
+        <div class="skill-node" data-skill="languages" 
+             data-description="Fluent in four languages: Arabic (Native), English (Advanced), Turkish (Intermediate), and French (Basic). This multilingual ability enhances my communication with diverse teams and clients worldwide."
+             data-experience="Native + Learning"
+             data-projects="International Collaboration"
+             data-tools="Arabic, English, Turkish, French">
+            <div class="skill-icon">🌍</div>
+            <div class="skill-name">Languages</div>
+            <div class="skill-level">Multilingual</div>
+        </div>
+        
+        <div class="skill-node" data-skill="frontend"
+             data-description="Skilled in creating advanced frontend websites with modern technologies. Experienced in building responsive, user-friendly interfaces that provide excellent user experiences across all devices."
+             data-experience="2+ Years"
+             data-projects="15+ Websites"
+             data-tools="HTML, CSS, JavaScript, React">
+            <div class="skill-icon">💻</div>
+            <div class="skill-name">Frontend Development</div>
+            <div class="skill-level">Advanced</div>
+        </div>
+        
+        <div class="skill-node" data-skill="programming"
+             data-description="Proficient in multiple programming languages including Java, JavaFX, HTML, CSS, JavaScript, and basic Python. Strong foundation in object-oriented programming and software development principles."
+             data-experience="3+ Years"
+             data-projects="20+ Projects"
+             data-tools="Java, JavaScript, Python, HTML/CSS">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">Programming</div>
+            <div class="skill-level">Intermediate</div>
+        </div>
+        
+        <div class="skill-node" data-skill="development"
+             data-description="Comprehensive software development skills covering the entire development lifecycle. From planning and design to implementation and testing, ensuring robust and maintainable code."
+             data-experience="2+ Years"
+             data-projects="25+ Applications"
+             data-tools="Git, VS Code, IntelliJ, Debugging">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-name">Software Development</div>
+            <div class="skill-level">Intermediate</div>
+        </div>
+        
+        <div class="skill-node" data-skill="editing"
+             data-description="Creative editing skills for both code and content. Experienced in refining user interfaces, optimizing code structure, and enhancing visual appeal while maintaining functionality."
+             data-experience="3+ Years"
+             data-projects="30+ Edits"
+             data-tools="VS Code, Photoshop, Figma">
+            <div class="skill-icon">🎬</div>
+            <div class="skill-name">Editing</div>
+            <div class="skill-level">Advanced</div>
+        </div>
+        
+        <div class="skill-node" data-skill="mobile"
+             data-description="Specialized in mobile-first design principles and responsive web development. Creating interfaces that work seamlessly across smartphones, tablets, and various screen sizes."
+             data-experience="2+ Years"
+             data-projects="10+ Mobile Designs"
+             data-tools="Figma, CSS Media Queries, Bootstrap">
+            <div class="skill-icon">📱</div>
+            <div class="skill-name">Mobile Design</div>
+            <div class="skill-level">Intermediate</div>
+        </div>
+        
+        <div class="skill-node" data-skill="problemsolving"
+             data-description="Strong analytical and problem-solving abilities developed through computer science studies. Experienced in debugging, algorithm optimization, and finding efficient solutions to complex challenges."
+             data-experience="3+ Years"
+             data-projects="100+ Problems Solved"
+             data-tools="Logical Thinking, Algorithms, Debugging">
+            <div class="skill-icon">🔍</div>
+            <div class="skill-name">Problem Solving</div>
+            <div class="skill-level">Advanced</div>
+        </div>
+        
+        <div class="skill-node" data-skill="learning"
+             data-description="Quick learner with excellent adaptation skills. Constantly updating my knowledge with new technologies and frameworks. Passionate about continuous improvement and staying current with industry trends."
+             data-experience="Lifetime Learner"
+             data-projects="Always Evolving"
+             data-tools="Online Courses, Documentation, Practice">
+            <div class="skill-icon">👩‍💻</div>
+            <div class="skill-name">Fast Learning</div>
+            <div class="skill-level">Expert</div>
+        </div>
+    </div>
+</section>
+    <!-- Projects Section with 3D Flipping Cards -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <h2 class="section-title">Featured Work</h2>
+            <p style="color: rgba(255, 255, 255, 0.6); font-size: 18px; margin-top: 20px;">Hover over cards to flip and see details ✨</p>
+        </div>
+
+
+        <div class="projects-grid">
+            <!-- Project Card 1 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front -->
+                    <div class="flip-card-front">
+                        <div class="project-visual" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">🌸</div>
+                        <h3 class="project-title">Bloom Studios</h3>
+                        <p class="project-category">Creative Floral Studio</p>
+                    </div>
+                    <!-- Back -->
+                    <div class="flip-card-back">
+                        <h3>Bloom Studios</h3>
+                        <p>A complete brand identity and immersive web experience for a creative floral studio, featuring elegant aesthetics and seamless user navigation.</p>
+                        <div class="project-details">
+                            <h4>Role</h4>
+                            <p>Lead Designer & Developer</p>
+                        </div>
+                        <div class="project-details">
+                            <h4>Duration</h4>
+                            <p>3 months • 2024</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Web Design</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front -->
+                    <div class="flip-card-front">
+                        <div class="project-visual" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">⭐</div>
+                        <h3 class="project-title">Sparkle App</h3>
+                        <p class="project-category">Wellness Platform</p>
+                    </div>
+                    <!-- Back -->
+                    <div class="flip-card-back">
+                        <h3>Sparkle App</h3>
+                        <p>A mindful wellness platform with intuitive interactions and a calming design language that promotes mindfulness and mental health.</p>
+                        <div class="project-details">
+                            <h4>Role</h4>
+                            <p>Product Designer</p>
+                        </div>
+                        <div class="project-details">
+                            <h4>Duration</h4>
+                            <p>4 months • 2024</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Prototyping</span>
+                            <span class="tag">Animation</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front -->
+                    <div class="flip-card-front">
+                        <div class="project-visual" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">👩‍💼</div>
+                        <h3 class="project-title">Creative Portfolio</h3>
+                        <p class="project-category">Personal Project</p>
+                    </div>
+                    <!-- Back -->
+                    <div class="flip-card-back">
+                        <h3>Creative Portfolio</h3>
+                        <p>An innovative portfolio showcasing work through interactive storytelling, featuring custom animations and 3D elements.</p>
+                        <div class="project-details">
+                            <h4>Role</h4>
+                            <p>Designer & Developer</p>
+                        </div>
+                        <div class="project-details">
+                            <h4>Duration</h4>
+                            <p>2 months • 2024</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Web Dev</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">3D</span>
+                            <span class="tag">Interactive</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <!-- Front -->
+                    <div class="flip-card-front">
+                        <div class="project-visual" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">💎</div>
+                        <h3 class="project-title">Luna Boutique</h3>
+                        <p class="project-category">Fashion E-commerce</p>
+                    </div>
+                    <!-- Back -->
+                    <div class="flip-card-back">
+                        <h3>Luna Boutique</h3>
+                        <p>An elegant e-commerce experience with a cohesive design system that elevated the brand's online presence and increased conversions by 45%.</p>
+                        <div class="project-details">
+                            <h4>Role</h4>
+                            <p>UX Designer & Strategist</p>
+                        </div>
+                        <div class="project-details">
+                            <h4>Duration</h4>
+                            <p>5 months • 2023</p>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Design System</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Together</h2>
+                <p style="color: rgba(255, 255, 255, 0.6); font-size: 18px; margin-top: 20px;">Have a project in mind? Drop me a message! ✨</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder=" " required>
+                    <label class="form-label">Your Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" placeholder=" " required>
+                    <label class="form-label">Email Address</label>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder=" " required>
+                    <label class="form-label">Subject</label>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-textarea" placeholder=" " required></textarea>
+                    <label class="form-label">Your Message</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Send Message ✨</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="mailto:your@email.com" class="footer-link">🌌</a>
+            <a href="#" class="footer-link">🐘</a>
+            <a href="#" class="footer-link">🍓</a>
+            <a href="#" class="footer-link">💻</a>
+        </div>
+        <p style="color: rgba(255, 255, 255, 0.5);">© 2025 Jana Abuzer • Crafted with 💖 and ☕</p>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="fab" id="scrollToTop">↑</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
